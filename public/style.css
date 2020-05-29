@@ -1,203 +1,68 @@
-/* 
-@media (width: 360px) {
-    h1 {
-        font-size: 12px;
-        padding-top: 0px;
-    }
-
-    body {
-        font-size: 10px;
-    }
-}
-
-@media (min-width: 640px) {
-    body {
-        /* font-size: 1rem; */
-
-/* }
-}
-
-@media (min-width:960px) {
-    body {
-        /* font-size: 1.1rem; */
-
-/* }
-} */
-
-/* @media (min-width:1100px) {
-    body {
-        font-size: 1.2rem;
-    }
-} */
-
-html {
-    background: #f6f6f6;
-}
-
+html,
 body {
-    text-align: center;
+    height: 100%;
+    color: #3f3f3f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+a {
+    color: #3f3f3f;
+    text-decoration: underline;
 }
 
 img {
-    width: auto;
-    height: 20%;
+    max-height: 20rem;
+    border-radius: 1px;
+}
+
+p {
+    margin-top: 1.2rem;
+    margin-bottom: .5rem;
 }
 
 .bg {
     background-image: url('bg-4.png');
-    min-height: 380px;
-    height: 100%;
+    height: 100vh;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    /* font-size: 20px; */
 }
 
-h1 {
-    color: #008080;
-    font-family: sans-serif;
-    font-weight: 400;
-    letter-spacing: -2.5px;
+.my-name {
+    padding-top: 0.5rem;
+    font-size: 45px;
+    letter-spacing: -3px;
+    color: #007A7A;
 }
 
-p {
-    font-family: Arial, Helvetica, sans-serif;
+.container {
+    padding-top: 1rem;
 }
 
-.below-aish {
-    color: #464644;
+.content-start {
+    margin-top: 2em;
 }
 
-i {
-    color: dimgray;
+.nav-link {
+    color: #3f3f3f !important;
 }
 
-.fa:hover {
-    color: #008080;
+.nav-link:hover,
+.current-active {
+    color: #0056b3 !important;
 }
 
-.aish-logo-2 {
-    opacity: 0.9;
-}
-
-.fa-arrow-down {
-    animation: blinker 2s linear infinite;
-}
-
-@keyframes blinker {
-    50% {
-        opacity: 0;
-    }
-}
-
-.tooltip {
-    position: relative;
-    display: inline-block;
-}
-
-.tooltip .tooltiptext {
-    font-family: Arial, Helvetica, sans-serif;
-    visibility: hidden;
-    margin-top: -5px;
-    width: 120px;
-    background-color: #464644;
-    color: #e3e3e3;
-    text-align: center;
-    border-radius: 6px;
-    padding: 0px 0;
-    /* Position the tooltip */
+.footer {
     position: absolute;
-    z-index: 1;
+    bottom: 0;
+    width: 100%;
 }
 
-.tooltip:hover .tooltiptext {
-    visibility: visible;
+.content {
+    float: right;
 }
 
-/* For mobile phones: */
-@media only screen and (min-width: 300px) {
-    h1 {
-        font-size: 25px;
-        padding-top: 35px;
-    }
-    body {
-        font-size: 12px;
-    }
-    .aish-logo-2 {
-        margin-top: 30px;
-    }
-    .fa-arrow-down {
-        bottom: 35;
-        right: 48%;
-        position: absolute;
-    }
-    i {
-        padding-top: 20px;
-        padding-inline: 8px;
-    }
-}
-
-@media only screen and (width: 600px) {
-    /* For tablets: */
-    h1 {
-        font-size: 30px;
-        padding-top: 100px;
-    }
-    .aish-logo-2 {
-        margin-top: 5px;
-    }
-    .fa-arrow-down {
-        bottom: 0;
-        right: 48%;
-        position: absolute;
-    }
-    i {
-        padding: 5px;
-        size: 15px;
-    }
-}
-
-@media only screen and (min-width: 740px and min-height:360px) {
-    h1 {
-        padding-top: 150px;
-    }
-    .bg {
-        font-size: 12px;
-    }
-    i {
-        margin-top: 50px;
-        padding: 5px;
-        size: 15px;
-    }
-    .aish-logo-2 {
-        margin-top: 70px;
-    }
-    .fa-arrow-down {
-        bottom: 0;
-        right: 100%;
-        position: absolute;
-    }
-}
-
-@media (width: 1080px) {
-    h1 {
-        font-size: 60px;
-        padding-top: 200px;
-    }
-    .bg {
-        font-size: 20px;
-    }
-    i {
-        padding: 20px;
-        size: 30px;
-    }
-    .aish-logo-2 {
-        margin-top: 30px;
-    }
-    .fa-arrow-down {
-        bottom: 0;
-        right: 48%;
-        position: absolute;
-    }
+.my-row {
+    flex-direction: row-reverse;
 }
